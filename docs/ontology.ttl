@@ -7,18 +7,23 @@
 @base <https://marcospiedra.github.io/bcfy/ontology.owl#> .
 
 <https://marcospiedra.github.io/bcfy/ontology.owl> rdf:type owl:Ontology ;
+                                                    owl:versionIRI <https://marcospiedra.github.io/bcfy/ontology.owl> ;
+                                                    <http://creativecommons.org/ns#licence> "http://creativecommons.org/licenses/by/4.0/" ;
                                                     <http://purl.org/dc/elements/1.1/abstract> "Best city for you is an ontology to know if the activities available in the city could fit your budget or your expectations." ;
+                                                    <http://purl.org/dc/elements/1.1/contributor> "MAPO" ;
+                                                    <http://purl.org/dc/elements/1.1/creator> "MAPO" ;
                                                     <http://purl.org/dc/elements/1.1/description> "A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings." ;
-                                                    <http://purl.org/dc/elements/1.1/preferredNamespacePrefix> "bcfy" ;
-                                                    <http://purl.org/dc/elements/1.1/rights> "Copyright © 2025" ,
-                                                                                             "http://creativecommons.org/licenses/by/4.0" ;
+                                                    <http://purl.org/dc/elements/1.1/publisher> "MAPO" ;
+                                                    <http://purl.org/dc/elements/1.1/rights> "Copyright © 2025" ;
                                                     <http://purl.org/dc/elements/1.1/title> "Best city for you" ;
-                                                    <http://purl.org/dc/terms/description> "A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings." ;
                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcfy" ;
+                                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/vocommons/voaf#" ;
                                                     rdfs:comment "A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings." ;
                                                     rdfs:isDefinedBy "MAPO" ;
                                                     rdfs:label "Best city for you" ;
-                                                    owl:versionInfo 1.0 .
+                                                    owl:priorVersion 1.0 ;
+                                                    owl:versionInfo 1.0 ;
+                                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
 
 #################################################################
 #    Annotation properties
@@ -29,16 +34,23 @@
 
 
 ###  http://purl.org/dc/elements/1.1/abstract
-<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty ;
-                                           rdfs:subPropertyOf <http://purl.org/dc/elements/1.1/abstract> .
+<http://purl.org/dc/elements/1.1/abstract> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/description
 <http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/elements/1.1/preferredNamespacePrefix
-<http://purl.org/dc/elements/1.1/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/rights
@@ -49,21 +61,1114 @@
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
-
-
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#comment
 rdfs:comment rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/2002/07/owl#versionInfo
-owl:versionInfo rdf:type owl:AnnotationProperty ;
-                rdfs:subPropertyOf owl:versionInfo .
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
 
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasCity
+:hasCity rdf:type owl:ObjectProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :Activities ;
+         rdfs:range :City ;
+         rdfs:comment "Has a city related" ;
+         rdfs:label "hasCity" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasCoordinate
+:hasCoordinate rdf:type owl:ObjectProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain :City ;
+               rdfs:range :Coordinate ;
+               rdfs:comment "Has a coordinate" ;
+               rdfs:label "hasCoordinate" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasDate
+:hasDate rdf:type owl:ObjectProperty ,
+                  owl:IrreflexiveProperty ;
+         rdfs:domain :Event ;
+         rdfs:range :Date ;
+         rdfs:comment "Date for an event" ;
+         rdfs:label "hasDate" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating
+:hasPriceRating rdf:type owl:ObjectProperty ,
+                         owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain :Activities ;
+                rdfs:range :Rating ;
+                rdfs:comment "Has price rating" ;
+                rdfs:label "hasPriceRating" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasRating
+:hasRating rdf:type owl:ObjectProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain :Activities ;
+           rdfs:range :Rating ;
+           rdfs:comment "Has rating" ;
+           rdfs:label "hasRating" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasCompanyValue
+:hasCompanyValue rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Transport ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Has company related, for transport" ;
+                 rdfs:label "hasCompanyValue" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasDateValue
+:hasDateValue rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Date ;
+              rdfs:range xsd:dateTime ;
+              rdfs:comment "Has a date, for events" ;
+              rdfs:label "hasDateValue" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasLatitude
+:hasLatitude rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Coordinate ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:onDatatype xsd:float ;
+                          owl:withRestrictions ( [ xsd:minInclusive "-90.0"^^xsd:float
+                                                 ]
+                                                 [ xsd:maxInclusive "90.0"^^xsd:float
+                                                 ]
+                                               )
+                        ] ;
+             rdfs:comment "Geographic coordinate system" ;
+             rdfs:label "hasLatitude" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasLongitude
+:hasLongitude rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Coordinate ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:onDatatype xsd:float ;
+                           owl:withRestrictions ( [ xsd:minInclusive "-180.0"^^xsd:float
+                                                  ]
+                                                  [ xsd:maxInclusive "180.0"^^xsd:float
+                                                  ]
+                                                )
+                         ] ;
+              rdfs:comment "Geographic coordinate system" ;
+              rdfs:label "hasLongitude" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue
+:hasNameValue rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Activities ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Name" ;
+              rdfs:label "hasNameValue" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue
+:hasPriceValue rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Activities ;
+               rdfs:range xsd:float ;
+               rdfs:comment "Has a price" ;
+               rdfs:label "hasPriceValue" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue
+:hasRatingValue rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Activities ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:onDatatype xsd:float ;
+                             owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:float
+                                                    ]
+                                                    [ xsd:maxInclusive "5.0"^^xsd:float
+                                                    ]
+                                                  )
+                           ] ;
+                rdfs:comment "Has rating value" ;
+                rdfs:label "hasRatingValue" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#hasStarValue
+:hasStarValue rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Hotel ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:onDatatype xsd:integer ;
+                           owl:withRestrictions ( [ xsd:minInclusive 0
+                                                  ]
+                                                  [ xsd:maxInclusive 5
+                                                  ]
+                                                )
+                         ] ;
+              rdfs:comment "Stars of hotel" ;
+              rdfs:label "hasStarValue" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Activities
+:Activities rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasCity ;
+                                  owl:someValuesFrom :City
+                                ] ;
+            rdfs:comment "Activities in the city" ;
+            rdfs:label "Activities" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Andalusian
+:Andalusian rdf:type owl:Class ;
+            rdfs:subClassOf :Restaurant ;
+            rdfs:comment "Andalusian restaurant in the city" ;
+            rdfs:label "Andalusian" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Attraction
+:Attraction rdf:type owl:Class ;
+            rdfs:subClassOf :Activities ;
+            rdfs:comment "Place in the city to enjoy" ;
+            rdfs:label "Attraction" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Beach
+:Beach rdf:type owl:Class ;
+       rdfs:subClassOf :Hotel ;
+       rdfs:comment "Hotel in the beach" ;
+       rdfs:label "Beach" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Bus
+:Bus rdf:type owl:Class ;
+     rdfs:subClassOf :Transport ;
+     rdfs:comment "Bus Transport" ;
+     rdfs:label "Bus" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Business
+:Business rdf:type owl:Class ;
+          rdfs:subClassOf :Hotel ;
+          rdfs:comment "Hotel for bussines" ;
+          rdfs:label "Bussines" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#City
+:City rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasCoordinate ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Coordinate
+                          ] ;
+      rdfs:comment "City, mainly for activites" ;
+      rdfs:label "City" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate
+:Coordinate rdf:type owl:Class ;
+            rdfs:comment "Geolocation coordinate system" ;
+            rdfs:label "Coordinate" ;
+            rdfs:sameAs "https://dbpedia.org/page/Geographic_coordinate_system"^^xsd:anyURI .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Cultural
+:Cultural rdf:type owl:Class ;
+          rdfs:subClassOf :Attraction ;
+          rdfs:comment "Cultural attraction in the city" ;
+          rdfs:label "Cultural" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Culture
+:Culture rdf:type owl:Class ;
+         rdfs:subClassOf :Event ;
+         rdfs:comment "Culture event in a city" ;
+         rdfs:label "Culture" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Date
+:Date rdf:type owl:Class ;
+      rdfs:comment "Date (Day/Month/Year)" ;
+      rdfs:label "Date" ;
+      rdfs:sameAs "https://dbpedia.org/page/Calendar_date" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf :Activities ;
+       rdfs:comment "Event in a city" ;
+       rdfs:label "Event" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Gastronomic
+:Gastronomic rdf:type owl:Class ;
+             rdfs:subClassOf :Event ;
+             rdfs:comment "Gastronomic event in a city" ;
+             rdfs:label "Gastronomic" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Hotel
+:Hotel rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasStarValue ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:integer
+                           ] ;
+       rdfs:subClassOf :Activities ;
+       rdfs:comment "Hotel in the city" ;
+       rdfs:label "Hotel" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Italian
+:Italian rdf:type owl:Class ;
+         rdfs:subClassOf :Restaurant ;
+         rdfs:comment "Italian restaurant in the city" ;
+         rdfs:label "Italian" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Japanese
+:Japanese rdf:type owl:Class ;
+          rdfs:subClassOf :Restaurant ;
+          rdfs:comment "Japanese restaurant in the city" ;
+          rdfs:label "Japanese" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Latitude
+:Latitude rdf:type owl:Class ;
+          rdfs:subClassOf :Coordinate ;
+          owl:disjointWith :Longitude ;
+          rdfs:comment "Coordinate Latitude" ;
+          rdfs:label "Latitude" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Longitude
+:Longitude rdf:type owl:Class ;
+           rdfs:subClassOf :Coordinate ;
+           rdfs:comment "Coordinate Longitude" ;
+           rdfs:label "Longitude" ;
+           rdfs:sameAs "http://dbpedia.org/page/Longitude" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Luxury
+:Luxury rdf:type owl:Class ;
+        rdfs:subClassOf :Hotel ;
+        rdfs:comment "Luxury hotels" ;
+        rdfs:label "Luxury" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Mediterranean
+:Mediterranean rdf:type owl:Class ;
+               rdfs:subClassOf :Restaurant ;
+               rdfs:comment "Mediterranean restaurant in the city" ;
+               rdfs:label "Mediterranean" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Metro
+:Metro rdf:type owl:Class ;
+       rdfs:subClassOf :Transport ;
+       rdfs:comment "Metro Transport" ;
+       rdfs:label "Metro" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Mexican
+:Mexican rdf:type owl:Class ;
+         rdfs:subClassOf :Restaurant ;
+         rdfs:comment "Mexican restaurant in the city" ;
+         rdfs:label "Mexican" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Monument
+:Monument rdf:type owl:Class ;
+          rdfs:subClassOf :Attraction ;
+          rdfs:comment "Monument attraction in the city" ;
+          rdfs:label "Monument" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Museum
+:Museum rdf:type owl:Class ;
+        rdfs:subClassOf :Attraction ;
+        rdfs:comment "Museum attraction in the city" ;
+        rdfs:label "Museum" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Music
+:Music rdf:type owl:Class ;
+       rdfs:subClassOf :Event ;
+       rdfs:comment "Music event in the city" ;
+       rdfs:label "Music" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Park
+:Park rdf:type owl:Class ;
+      rdfs:subClassOf :Attraction ;
+      rdfs:comment "Music attraction in the city" ;
+      rdfs:label "Music" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh
+:PriceHigh rdf:type owl:Class ;
+           rdfs:subClassOf :Rating .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow
+:PriceLow rdf:type owl:Class ;
+          rdfs:subClassOf :Rating .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#PublicBicycle
+:PublicBicycle rdf:type owl:Class ;
+               rdfs:subClassOf :Transport ;
+               rdfs:comment "Public Bicycle" ;
+               rdfs:label "PublicBicycle" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:comment "Rating classes" ;
+        rdfs:label "Rating" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh
+:RatingHigh rdf:type owl:Class ;
+            rdfs:subClassOf :Rating .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow
+:RatingLow rdf:type owl:Class ;
+           rdfs:subClassOf :Rating .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant
+:Restaurant rdf:type owl:Class ;
+            rdfs:subClassOf :Activities ;
+            rdfs:comment "Restaurant in the ciy" ;
+            rdfs:label "Restaurant" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Rural
+:Rural rdf:type owl:Class ;
+       rdfs:subClassOf :Hotel ;
+       rdfs:comment "Rural hotels" ;
+       rdfs:label "Rural" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Sport
+:Sport rdf:type owl:Class ;
+       rdfs:subClassOf :Event ;
+       rdfs:comment "Sport event in the city" ;
+       rdfs:label "Sport" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Taxi
+:Taxi rdf:type owl:Class ;
+      rdfs:subClassOf :Transport ;
+      rdfs:comment "Taxi Transport" ;
+      rdfs:label "Taxi" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Technological
+:Technological rdf:type owl:Class ;
+               rdfs:subClassOf :Event ;
+               rdfs:comment "Technological event in the city" ;
+               rdfs:label "Technological" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Tourist
+:Tourist rdf:type owl:Class ;
+         rdfs:subClassOf :Hotel ;
+         rdfs:comment "Tourist hotels" ;
+         rdfs:label "Tourist" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Tram
+:Tram rdf:type owl:Class ;
+      rdfs:subClassOf :Transport ;
+      rdfs:comment "Tram Transport" ;
+      rdfs:label "Tram" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Transport
+:Transport rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasCompanyValue ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ;
+           rdfs:subClassOf :Activities ;
+           rdfs:comment "Transport in the city" ;
+           rdfs:label "Transport" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#CastellToledo
+:CastellToledo rdf:type owl:NamedIndividual ,
+                        :Monument ;
+               :hasCity :Toledo ;
+               :hasNameValue "Castell Toledo" ;
+               :hasRatingValue "3.7"^^xsd:float ;
+               rdfs:comment "Monument castell toledo" ;
+               rdfs:label "CastellToledo" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#CityMadrid
+:CityMadrid rdf:type owl:NamedIndividual ,
+                     :PublicBicycle ;
+            :hasCity :Madrid ;
+            :hasCompanyValue "City Madrid" ;
+            :hasPriceValue "4.32"^^xsd:float ;
+            rdfs:comment "Transport public bicycle City Madrid" ;
+            rdfs:label "CityMadrid" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#CongresToledo
+:CongresToledo rdf:type owl:NamedIndividual ,
+                        :Culture ;
+               :hasCity :Toledo ;
+               :hasDateValue "2024-12-14T00:00:00"^^xsd:dateTime ;
+               :hasNameValue "Congres Toledo" ;
+               rdfs:comment "Cultural event congres toledo" ;
+               rdfs:label "CongresToledo" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#FestivalMadrid
+:FestivalMadrid rdf:type owl:NamedIndividual ,
+                         :Music ;
+                :hasCity :Madrid ;
+                :hasDateValue "2024-09-14T00:00:00"^^xsd:dateTime ;
+                :hasNameValue "Festival Madrid" ;
+                rdfs:comment "Music event, festival madrid" ;
+                rdfs:label "FestivalMadrid" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#FiraToledo
+:FiraToledo rdf:type owl:NamedIndividual ,
+                     :Sport ;
+            :hasCity :Toledo ;
+            :hasDateValue "2024-08-26T00:00:00"^^xsd:dateTime ;
+            :hasNameValue "Fira Toledo" ;
+            rdfs:comment "Sport event, fira toledo" ;
+            rdfs:label "FiraToledo" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#FusioMadrid
+:FusioMadrid rdf:type owl:NamedIndividual ,
+                      :Italian ;
+             :hasCity :Madrid ;
+             :hasNameValue "Fusion Madrid" ;
+             :hasPriceValue "37.0"^^xsd:float ;
+             :hasRatingValue "4.8"^^xsd:float ;
+             rdfs:comment "Italian restaurant Fusion Madrid" ;
+             rdfs:label "FusioMadrid" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#FusioValencia
+:FusioValencia rdf:type owl:NamedIndividual ,
+                        :Andalusian ;
+               :hasCity :Valencia ;
+               :hasNameValue "Fusio Valencia" ;
+               :hasPriceValue "13.0"^^xsd:float ;
+               :hasRatingValue "4.2"^^xsd:float ;
+               rdfs:comment "Andalusian restaurant Fusion Valencia" ;
+               rdfs:label "FusioValencia" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#FusionValencia
+:FusionValencia rdf:type owl:NamedIndividual ,
+                         :Mexican ;
+                :hasCity :Valencia ;
+                :hasNameValue "Fusio Valencia" ;
+                :hasPriceValue "46.0"^^xsd:float ;
+                :hasRatingValue "4.2"^^xsd:float ;
+                rdfs:comment "Mexican restaurant Fusion Valencia" ;
+                rdfs:label "FusionValencia" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#GourmetToledo
+:GourmetToledo rdf:type owl:NamedIndividual ,
+                        :Japanese ;
+               :hasCity :Toledo ;
+               :hasNameValue "Gourmet Toledo" ;
+               :hasPriceValue "48.0"^^xsd:float ;
+               :hasRatingValue "4.5"^^xsd:float ;
+               rdfs:comment "Japanese restaurant Gourmet Toledo" ;
+               rdfs:label "GourmetToledo" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#HotelDelMarToledo
+:HotelDelMarToledo rdf:type owl:NamedIndividual ,
+                            :Beach ;
+                   :hasCity :Toledo ;
+                   :hasNameValue "Hotel del mar Toledo" ;
+                   :hasPriceValue "145.0"^^xsd:float ;
+                   :hasRatingValue "4.3"^^xsd:float ;
+                   :hasStarValue 5 ;
+                   rdfs:comment "Hotel with beach Hotel del mar toledo" ;
+                   rdfs:label "HotelDelMarToledo" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#HotelPalaceMadrid
+:HotelPalaceMadrid rdf:type owl:NamedIndividual ,
+                            :Business ;
+                   :hasCity :Madrid ;
+                   :hasNameValue "Hotel palace Madrid" ;
+                   :hasPriceValue "91.0"^^xsd:float ;
+                   :hasRatingValue "4.5"^^xsd:float ;
+                   :hasStarValue 5 ;
+                   rdfs:comment "Hotel for bussines Hotel Palace Madrid" ;
+                   rdfs:label "HotelPalaceMadrid" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#HotelVistaToledo
+:HotelVistaToledo rdf:type owl:NamedIndividual ,
+                           :Tourist ;
+                  :hasCity :Toledo ;
+                  :hasNameValue "Hotel Vista Toledo" ;
+                  :hasPriceValue "99.0"^^xsd:float ;
+                  :hasRatingValue "4.6"^^xsd:float ;
+                  :hasStarValue 3 ;
+                  rdfs:comment "Hotel for tourism Hotel Vista Toledo" ;
+                  rdfs:label "HotelVistaToledo" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Madrid
+:Madrid rdf:type owl:NamedIndividual ,
+                 :City ;
+        :hasCoordinate :MadridCoordinates ;
+        rdfs:comment "Madrid city" ;
+        rdfs:label "Madrid" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#MadridCoordinates
+:MadridCoordinates rdf:type owl:NamedIndividual ,
+                            :Coordinate ;
+                   :hasLatitude "40.4168"^^xsd:float ;
+                   :hasLongitude "-3.7038"^^xsd:float ;
+                   rdfs:comment "Madrid coordinates" ;
+                   rdfs:label "MadridCoordinates" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#MuseoMadrid
+:MuseoMadrid rdf:type owl:NamedIndividual ,
+                      :Museum ;
+             :hasCity :Madrid ;
+             :hasNameValue "Museo Madrid" ;
+             :hasRatingValue "3.7"^^xsd:float ;
+             rdfs:comment "Museo Madrid" ;
+             rdfs:label "MuseoMadrid" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#ParcMadrid
+:ParcMadrid rdf:type owl:NamedIndividual ,
+                     :Cultural ;
+            :hasCity :Madrid ;
+            :hasNameValue "Parc Madrid" ;
+            :hasRatingValue "3.8"^^xsd:float ;
+            rdfs:comment "Parc Madrid" ;
+            rdfs:label "ParcMadrid" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#ParcToledo
+:ParcToledo rdf:type owl:NamedIndividual ,
+                     :Monument ;
+            :hasCity :Toledo ;
+            :hasNameValue "Parc Toledo" ;
+            :hasRatingValue "4.8"^^xsd:float ;
+            rdfs:comment "Parc Toledo" ;
+            rdfs:label "ParcToledo" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh
+:PriceHigh rdf:type owl:NamedIndividual ,
+                    :PriceHigh .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow
+:PriceLow rdf:type owl:NamedIndividual ,
+                   :PriceLow .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh
+:RatingHigh rdf:type owl:NamedIndividual ,
+                     :RatingHigh .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow
+:RatingLow rdf:type owl:NamedIndividual ,
+                    :RatingLow .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Toledo
+:Toledo rdf:type owl:NamedIndividual ,
+                 :City ;
+        :hasCoordinate :ToledoCoordinates ;
+        rdfs:comment "Toledo city" ;
+        rdfs:label "Toledo" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#ToledoCoordinates
+:ToledoCoordinates rdf:type owl:NamedIndividual ,
+                            :Coordinate ;
+                   :hasLatitude "39.8628"^^xsd:float ;
+                   :hasLongitude "-4.0273"^^xsd:float ;
+                   rdfs:comment "Toledo coordinates" ;
+                   rdfs:label "ToledoCoordinates" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#TradicioToledo
+:TradicioToledo rdf:type owl:NamedIndividual ,
+                         :Mexican ;
+                :hasCity :Toledo ;
+                :hasNameValue "Tradicio Toledo" ;
+                :hasPriceValue "46.0"^^xsd:float ;
+                :hasRatingValue "3.7"^^xsd:float ;
+                rdfs:comment "Mexican restaurant tradicio toledo" ;
+                rdfs:label "TradicioToledo" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#TransToledo
+:TransToledo rdf:type owl:NamedIndividual ,
+                      :Tram ;
+             :hasCity :Toledo ;
+             :hasCompanyValue "Trans Toledo" ;
+             :hasPriceValue "3.61"^^xsd:float ;
+             rdfs:comment "Transport tram Trans Toledo" ;
+             rdfs:label "TransToledo" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#TransValencia
+:TransValencia rdf:type owl:NamedIndividual ,
+                        :Tram ;
+               :hasCity :Valencia ;
+               :hasCompanyValue "Trans Valencia" ;
+               :hasPriceValue "9.05"^^xsd:float ;
+               rdfs:comment "Transport tram Trans Valencia" ;
+               rdfs:label "TransValencia" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#UrbanToledo
+:UrbanToledo rdf:type owl:NamedIndividual ,
+                      :Metro ;
+             :hasCity :Toledo ;
+             :hasCompanyValue "Urban Toledo" ;
+             :hasPriceValue "6.19"^^xsd:float ;
+             rdfs:comment "Metro Urban Toledo" ;
+             rdfs:label "UrbanToledo" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#UrbanValencia
+:UrbanValencia rdf:type owl:NamedIndividual ,
+                        :Bus ;
+               :hasCity :Valencia ;
+               :hasCompanyValue "Urban Valencia" ;
+               :hasPriceValue "7.57"^^xsd:float ;
+               rdfs:comment "Bus Urban Valencia" ;
+               rdfs:label "UrbanValencia" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#Valencia
+:Valencia rdf:type owl:NamedIndividual ,
+                   :City ;
+          :hasCoordinate :ValenciaCoordinates ;
+          rdfs:comment "Valencia City" ;
+          rdfs:label "Valencia" .
+
+
+###  https://marcospiedra.github.io/bcfy/ontology.owl#ValenciaCoordinates
+:ValenciaCoordinates rdf:type owl:NamedIndividual ,
+                              :Coordinate ;
+                     :hasLatitude "39.4699"^^xsd:float ;
+                     :hasLongitude "-0.3763"^^xsd:float ;
+                     rdfs:comment "Valencia Coordinates" ;
+                     rdfs:label "ValenciaCoordinates" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:PriceHigh rdfs:comment "High rate" ;
+           rdfs:label "PriceHigh" .
+
+
+:PriceLow rdfs:comment "Low rate" ;
+          rdfs:label "PriceLow" .
+
+
+:RatingHigh rdfs:comment "High rate" ;
+            rdfs:label "RatingHigh" .
+
+
+:RatingLow rdfs:comment "Low rate" ;
+           rdfs:label "RatingLow" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Andalusian
+                :Italian
+                :Japanese
+                :Mediterranean
+                :Mexican
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Culture
+                :Gastronomic
+                :Music
+                :Sport
+                :Technological
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :PriceHigh
+                :PriceLow
+                :RatingHigh
+                :RatingLow
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#X> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#R> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <urn:swrl:var#R> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first 4.5 ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Activities ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRatingValue ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#R>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :RatingHigh
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <urn:swrl:var#R> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first 4.5 ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Activities ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRatingValue ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#R>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :RatingLow
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Transport ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceValue ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#R>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#R> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 4 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :PriceHigh
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Transport ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceValue ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#R>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#R> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 4 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :PriceLow
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceValue ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#R>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#R> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 100 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :PriceLow
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceValue ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#R>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Restaurant ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#R> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 40 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :PriceHigh
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceValue ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#R>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Restaurant ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#R> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 40 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :PriceLow
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceValue ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#R>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <urn:swrl:var#R> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 100 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Hotel ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPriceRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :PriceHigh
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

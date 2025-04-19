@@ -2,27 +2,35 @@
 <rdf:RDF xmlns="https://marcospiedra.github.io/bcfy/ontology.owl#"
      xml:base="https://marcospiedra.github.io/bcfy/ontology.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:ns1="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:ontology="https://marcospiedra.github.io/bcfy/ontology.owl#">
     <owl:Ontology rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl">
+        <owl:versionIRI rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl"/>
+        <ns1:licence>http://creativecommons.org/licenses/by/4.0/</ns1:licence>
         <dc:abstract>Best city for you is an ontology to know if the activities available in the city could fit your budget or your expectations.</dc:abstract>
+        <dc:contributor>MAPO</dc:contributor>
+        <dc:creator>MAPO</dc:creator>
         <dc:description>A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings.</dc:description>
-        <dc:preferredNamespacePrefix>bcfy</dc:preferredNamespacePrefix>
+        <dc:publisher>MAPO</dc:publisher>
         <dc:rights>Copyright © 2025</dc:rights>
-        <dc:rights>http://creativecommons.org/licenses/by/4.0</dc:rights>
         <dc:title>Best city for you</dc:title>
-        <terms:description>A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings.</terms:description>
         <vann:preferredNamespacePrefix>bcfy</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://purl.org/vocommons/voaf#</vann:preferredNamespaceUri>
         <rdfs:comment>A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings.</rdfs:comment>
         <rdfs:isDefinedBy>MAPO</rdfs:isDefinedBy>
         <rdfs:label>Best city for you</rdfs:label>
+        <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:priorVersion>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <ns:term_status>testing</ns:term_status>
     </owl:Ontology>
     
 
@@ -49,9 +57,21 @@
     <!-- http://purl.org/dc/elements/1.1/abstract -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/abstract"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
@@ -62,10 +82,10 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/preferredNamespacePrefix -->
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/preferredNamespacePrefix"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
     
 
 
@@ -83,17 +103,17 @@
     
 
 
-    <!-- http://purl.org/dc/terms/description -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
-
-
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
@@ -104,12 +124,1765 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasCity -->
+
+
+    <owl:ObjectProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasCity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+        <rdfs:range rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#City"/>
+        <rdfs:comment>Has a city related</rdfs:comment>
+        <rdfs:label>hasCity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasCoordinate -->
+
+
+    <owl:ObjectProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasCoordinate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#City"/>
+        <rdfs:range rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"/>
+        <rdfs:comment>Has a coordinate</rdfs:comment>
+        <rdfs:label>hasCoordinate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasDate -->
+
+
+    <owl:ObjectProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Event"/>
+        <rdfs:range rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Date"/>
+        <rdfs:comment>Date for an event</rdfs:comment>
+        <rdfs:label>hasDate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating -->
+
+
+    <owl:ObjectProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+        <rdfs:range rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Rating"/>
+        <rdfs:comment>Has price rating</rdfs:comment>
+        <rdfs:label>hasPriceRating</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasRating -->
+
+
+    <owl:ObjectProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasRating">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+        <rdfs:range rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Rating"/>
+        <rdfs:comment>Has rating</rdfs:comment>
+        <rdfs:label>hasRating</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasCompanyValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasCompanyValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Has company related, for transport</rdfs:comment>
+        <rdfs:label>hasCompanyValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasDateValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasDateValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Has a date, for events</rdfs:comment>
+        <rdfs:label>hasDateValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasLatitude -->
+
+
+    <owl:DatatypeProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasLatitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-90.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Geographic coordinate system</rdfs:comment>
+        <rdfs:label>hasLatitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasLongitude -->
+
+
+    <owl:DatatypeProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasLongitude">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-180.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">180.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Geographic coordinate system</rdfs:comment>
+        <rdfs:label>hasLongitude</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name</rdfs:comment>
+        <rdfs:label>hasNameValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Has a price</rdfs:comment>
+        <rdfs:label>hasPriceValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue">
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Has rating value</rdfs:comment>
+        <rdfs:label>hasRatingValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#hasStarValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#hasStarValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Stars of hotel</rdfs:comment>
+        <rdfs:label>hasStarValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Activities -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Activities">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasCity"/>
+                <owl:someValuesFrom rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#City"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Activities in the city</rdfs:comment>
+        <rdfs:label>Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Andalusian -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Andalusian">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"/>
+        <rdfs:comment>Andalusian restaurant in the city</rdfs:comment>
+        <rdfs:label>Andalusian</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Attraction -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Attraction">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+        <rdfs:comment>Place in the city to enjoy</rdfs:comment>
+        <rdfs:label>Attraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Beach -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Beach">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"/>
+        <rdfs:comment>Hotel in the beach</rdfs:comment>
+        <rdfs:label>Beach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Bus -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Bus">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Transport"/>
+        <rdfs:comment>Bus Transport</rdfs:comment>
+        <rdfs:label>Bus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Business -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Business">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"/>
+        <rdfs:comment>Hotel for bussines</rdfs:comment>
+        <rdfs:label>Bussines</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#City -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#City">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasCoordinate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>City, mainly for activites</rdfs:comment>
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate">
+        <rdfs:comment>Geolocation coordinate system</rdfs:comment>
+        <rdfs:label>Coordinate</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Geographic_coordinate_system</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Cultural -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Cultural">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Attraction"/>
+        <rdfs:comment>Cultural attraction in the city</rdfs:comment>
+        <rdfs:label>Cultural</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Culture -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Culture">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Event"/>
+        <rdfs:comment>Culture event in a city</rdfs:comment>
+        <rdfs:label>Culture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Date -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Date">
+        <rdfs:comment>Date (Day/Month/Year)</rdfs:comment>
+        <rdfs:label>Date</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Calendar_date</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Event -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Event">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+        <rdfs:comment>Event in a city</rdfs:comment>
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Gastronomic -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Gastronomic">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Event"/>
+        <rdfs:comment>Gastronomic event in a city</rdfs:comment>
+        <rdfs:label>Gastronomic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Hotel -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Hotel">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasStarValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+        <rdfs:comment>Hotel in the city</rdfs:comment>
+        <rdfs:label>Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Italian -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Italian">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"/>
+        <rdfs:comment>Italian restaurant in the city</rdfs:comment>
+        <rdfs:label>Italian</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Japanese -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Japanese">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"/>
+        <rdfs:comment>Japanese restaurant in the city</rdfs:comment>
+        <rdfs:label>Japanese</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Latitude -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Latitude">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"/>
+        <owl:disjointWith rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Longitude"/>
+        <rdfs:comment>Coordinate Latitude</rdfs:comment>
+        <rdfs:label>Latitude</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Longitude -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Longitude">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"/>
+        <rdfs:comment>Coordinate Longitude</rdfs:comment>
+        <rdfs:label>Longitude</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/page/Longitude</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Luxury -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Luxury">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"/>
+        <rdfs:comment>Luxury hotels</rdfs:comment>
+        <rdfs:label>Luxury</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Mediterranean -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Mediterranean">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"/>
+        <rdfs:comment>Mediterranean restaurant in the city</rdfs:comment>
+        <rdfs:label>Mediterranean</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Metro -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Metro">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Transport"/>
+        <rdfs:comment>Metro Transport</rdfs:comment>
+        <rdfs:label>Metro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Mexican -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Mexican">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"/>
+        <rdfs:comment>Mexican restaurant in the city</rdfs:comment>
+        <rdfs:label>Mexican</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Monument -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Monument">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Attraction"/>
+        <rdfs:comment>Monument attraction in the city</rdfs:comment>
+        <rdfs:label>Monument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Museum -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Museum">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Attraction"/>
+        <rdfs:comment>Museum attraction in the city</rdfs:comment>
+        <rdfs:label>Museum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Music -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Music">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Event"/>
+        <rdfs:comment>Music event in the city</rdfs:comment>
+        <rdfs:label>Music</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Park -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Park">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Attraction"/>
+        <rdfs:comment>Music attraction in the city</rdfs:comment>
+        <rdfs:label>Music</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Rating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Rating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#PublicBicycle -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#PublicBicycle">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Transport"/>
+        <rdfs:comment>Public Bicycle</rdfs:comment>
+        <rdfs:label>PublicBicycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Rating -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Rating">
+        <rdfs:comment>Rating classes</rdfs:comment>
+        <rdfs:label>Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Rating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Rating"/>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+        <rdfs:comment>Restaurant in the ciy</rdfs:comment>
+        <rdfs:label>Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Rural -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Rural">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"/>
+        <rdfs:comment>Rural hotels</rdfs:comment>
+        <rdfs:label>Rural</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Sport -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Sport">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Event"/>
+        <rdfs:comment>Sport event in the city</rdfs:comment>
+        <rdfs:label>Sport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Taxi -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Taxi">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Transport"/>
+        <rdfs:comment>Taxi Transport</rdfs:comment>
+        <rdfs:label>Taxi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Technological -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Technological">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Event"/>
+        <rdfs:comment>Technological event in the city</rdfs:comment>
+        <rdfs:label>Technological</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Tourist -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Tourist">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"/>
+        <rdfs:comment>Tourist hotels</rdfs:comment>
+        <rdfs:label>Tourist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Tram -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Tram">
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Transport"/>
+        <rdfs:comment>Tram Transport</rdfs:comment>
+        <rdfs:label>Tram</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Transport -->
+
+
+    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Transport">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasCompanyValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+        <rdfs:comment>Transport in the city</rdfs:comment>
+        <rdfs:label>Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#CastellToledo -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#CastellToledo">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Monument"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"/>
+        <hasNameValue>Castell Toledo</hasNameValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</hasRatingValue>
+        <rdfs:comment>Monument castell toledo</rdfs:comment>
+        <rdfs:label>CastellToledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#CityMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#CityMadrid">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#PublicBicycle"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"/>
+        <hasCompanyValue>City Madrid</hasCompanyValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.32</hasPriceValue>
+        <rdfs:comment>Transport public bicycle City Madrid</rdfs:comment>
+        <rdfs:label>CityMadrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#CongresToledo -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#CongresToledo">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Culture"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"/>
+        <hasDateValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-14T00:00:00</hasDateValue>
+        <hasNameValue>Congres Toledo</hasNameValue>
+        <rdfs:comment>Cultural event congres toledo</rdfs:comment>
+        <rdfs:label>CongresToledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#FestivalMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#FestivalMadrid">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Music"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"/>
+        <hasDateValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-14T00:00:00</hasDateValue>
+        <hasNameValue>Festival Madrid</hasNameValue>
+        <rdfs:comment>Music event, festival madrid</rdfs:comment>
+        <rdfs:label>FestivalMadrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#FiraToledo -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#FiraToledo">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Sport"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"/>
+        <hasDateValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-26T00:00:00</hasDateValue>
+        <hasNameValue>Fira Toledo</hasNameValue>
+        <rdfs:comment>Sport event, fira toledo</rdfs:comment>
+        <rdfs:label>FiraToledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#FusioMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#FusioMadrid">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Italian"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"/>
+        <hasNameValue>Fusion Madrid</hasNameValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">37.0</hasPriceValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</hasRatingValue>
+        <rdfs:comment>Italian restaurant Fusion Madrid</rdfs:comment>
+        <rdfs:label>FusioMadrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#FusioValencia -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#FusioValencia">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Andalusian"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Valencia"/>
+        <hasNameValue>Fusio Valencia</hasNameValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.0</hasPriceValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</hasRatingValue>
+        <rdfs:comment>Andalusian restaurant Fusion Valencia</rdfs:comment>
+        <rdfs:label>FusioValencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#FusionValencia -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#FusionValencia">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Mexican"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Valencia"/>
+        <hasNameValue>Fusio Valencia</hasNameValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.0</hasPriceValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</hasRatingValue>
+        <rdfs:comment>Mexican restaurant Fusion Valencia</rdfs:comment>
+        <rdfs:label>FusionValencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#GourmetToledo -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#GourmetToledo">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Japanese"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"/>
+        <hasNameValue>Gourmet Toledo</hasNameValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">48.0</hasPriceValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</hasRatingValue>
+        <rdfs:comment>Japanese restaurant Gourmet Toledo</rdfs:comment>
+        <rdfs:label>GourmetToledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#HotelDelMarToledo -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#HotelDelMarToledo">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Beach"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"/>
+        <hasNameValue>Hotel del mar Toledo</hasNameValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">145.0</hasPriceValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.3</hasRatingValue>
+        <hasStarValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasStarValue>
+        <rdfs:comment>Hotel with beach Hotel del mar toledo</rdfs:comment>
+        <rdfs:label>HotelDelMarToledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#HotelPalaceMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#HotelPalaceMadrid">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Business"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"/>
+        <hasNameValue>Hotel palace Madrid</hasNameValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">91.0</hasPriceValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.5</hasRatingValue>
+        <hasStarValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasStarValue>
+        <rdfs:comment>Hotel for bussines Hotel Palace Madrid</rdfs:comment>
+        <rdfs:label>HotelPalaceMadrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#HotelVistaToledo -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#HotelVistaToledo">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Tourist"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"/>
+        <hasNameValue>Hotel Vista Toledo</hasNameValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">99.0</hasPriceValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</hasRatingValue>
+        <hasStarValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasStarValue>
+        <rdfs:comment>Hotel for tourism Hotel Vista Toledo</rdfs:comment>
+        <rdfs:label>HotelVistaToledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Madrid -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Madrid">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#City"/>
+        <hasCoordinate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#MadridCoordinates"/>
+        <rdfs:comment>Madrid city</rdfs:comment>
+        <rdfs:label>Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#MadridCoordinates -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#MadridCoordinates">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"/>
+        <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">40.4168</hasLatitude>
+        <hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-3.7038</hasLongitude>
+        <rdfs:comment>Madrid coordinates</rdfs:comment>
+        <rdfs:label>MadridCoordinates</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#MuseoMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#MuseoMadrid">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Museum"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"/>
+        <hasNameValue>Museo Madrid</hasNameValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</hasRatingValue>
+        <rdfs:comment>Museo Madrid</rdfs:comment>
+        <rdfs:label>MuseoMadrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#ParcMadrid -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#ParcMadrid">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Cultural"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"/>
+        <hasNameValue>Parc Madrid</hasNameValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.8</hasRatingValue>
+        <rdfs:comment>Parc Madrid</rdfs:comment>
+        <rdfs:label>ParcMadrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#ParcToledo -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#ParcToledo">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Monument"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"/>
+        <hasNameValue>Parc Toledo</hasNameValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.8</hasRatingValue>
+        <rdfs:comment>Parc Toledo</rdfs:comment>
+        <rdfs:label>ParcToledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Toledo -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Toledo">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#City"/>
+        <hasCoordinate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#ToledoCoordinates"/>
+        <rdfs:comment>Toledo city</rdfs:comment>
+        <rdfs:label>Toledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#ToledoCoordinates -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#ToledoCoordinates">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"/>
+        <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">39.8628</hasLatitude>
+        <hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-4.0273</hasLongitude>
+        <rdfs:comment>Toledo coordinates</rdfs:comment>
+        <rdfs:label>ToledoCoordinates</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#TradicioToledo -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#TradicioToledo">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Mexican"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"/>
+        <hasNameValue>Tradicio Toledo</hasNameValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.0</hasPriceValue>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.7</hasRatingValue>
+        <rdfs:comment>Mexican restaurant tradicio toledo</rdfs:comment>
+        <rdfs:label>TradicioToledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#TransToledo -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#TransToledo">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Tram"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"/>
+        <hasCompanyValue>Trans Toledo</hasCompanyValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.61</hasPriceValue>
+        <rdfs:comment>Transport tram Trans Toledo</rdfs:comment>
+        <rdfs:label>TransToledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#TransValencia -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#TransValencia">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Tram"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Valencia"/>
+        <hasCompanyValue>Trans Valencia</hasCompanyValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.05</hasPriceValue>
+        <rdfs:comment>Transport tram Trans Valencia</rdfs:comment>
+        <rdfs:label>TransValencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#UrbanToledo -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#UrbanToledo">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Metro"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"/>
+        <hasCompanyValue>Urban Toledo</hasCompanyValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.19</hasPriceValue>
+        <rdfs:comment>Metro Urban Toledo</rdfs:comment>
+        <rdfs:label>UrbanToledo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#UrbanValencia -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#UrbanValencia">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Bus"/>
+        <hasCity rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Valencia"/>
+        <hasCompanyValue>Urban Valencia</hasCompanyValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.57</hasPriceValue>
+        <rdfs:comment>Bus Urban Valencia</rdfs:comment>
+        <rdfs:label>UrbanValencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Valencia -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Valencia">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#City"/>
+        <hasCoordinate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#ValenciaCoordinates"/>
+        <rdfs:comment>Valencia City</rdfs:comment>
+        <rdfs:label>Valencia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#ValenciaCoordinates -->
+
+
+    <owl:NamedIndividual rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#ValenciaCoordinates">
+        <rdf:type rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"/>
+        <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">39.4699</hasLatitude>
+        <hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-0.3763</hasLongitude>
+        <rdfs:comment>Valencia Coordinates</rdfs:comment>
+        <rdfs:label>ValenciaCoordinates</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh">
+        <rdfs:comment>High rate</rdfs:comment>
+        <rdfs:label>PriceHigh</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow">
+        <rdfs:comment>Low rate</rdfs:comment>
+        <rdfs:label>PriceLow</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh">
+        <rdfs:comment>High rate</rdfs:comment>
+        <rdfs:label>RatingHigh</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow">
+        <rdfs:comment>Low rate</rdfs:comment>
+        <rdfs:label>RatingLow</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Andalusian"/>
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Italian"/>
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Japanese"/>
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Mediterranean"/>
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Mexican"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Culture"/>
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Gastronomic"/>
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Music"/>
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Sport"/>
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Technological"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh"/>
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow"/>
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh"/>
+            <rdf:Description rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#X">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#R">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#R"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#R"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#R"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Activities"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#R"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Transport"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#R"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#R"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Transport"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#R"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#R"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#R"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#R"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#R"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#R"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#R"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#R"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#R"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#R"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 

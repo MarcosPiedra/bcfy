@@ -1,17 +1,726 @@
 [ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid5"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "-180.0"
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#R"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "100"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#R"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid114"
+    }, {
+      "@id" : "_:genid112"
+    }, {
+      "@id" : "_:genid110"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid118"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid15"
+    }, {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#R"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue"
+  } ]
+}, {
+  "@id" : "_:genid112",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ]
+}, {
+  "@id" : "_:genid114",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#R"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+      "@value" : "4.5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid118",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasRating"
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid125"
+    }, {
+      "@id" : "_:genid123"
+    }, {
+      "@id" : "_:genid121"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid129"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#R"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue"
+  } ]
+}, {
+  "@id" : "_:genid123",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ]
+}, {
+  "@id" : "_:genid125",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#R"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+      "@value" : "4.5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid129",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasRating"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "5.0"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "0.0"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid20"
+    }, {
+      "@id" : "_:genid18"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#City"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasCoordinate"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasStarValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasCompanyValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Andalusian"
+    }, {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Italian"
+    }, {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Japanese"
+    }, {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Mediterranean"
+    }, {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Mexican"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "90.0"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Culture"
+    }, {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Gastronomic"
+    }, {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Music"
+    }, {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Sport"
+    }, {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Technological"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh"
+    }, {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow"
+    }, {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh"
+    }, {
+      "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid50"
+    }, {
+      "@id" : "_:genid48"
+    }, {
+      "@id" : "_:genid44"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid52"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#R"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#R"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "-90.0"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Transport"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid61"
+    }, {
+      "@id" : "_:genid59"
+    }, {
+      "@id" : "_:genid55"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid63"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#R"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#R"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid8"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Transport"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid72"
+    }, {
+      "@id" : "_:genid70"
+    }, {
+      "@id" : "_:genid66"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid74"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#R"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "100"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#R"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid83"
+    }, {
+      "@id" : "_:genid81"
+    }, {
+      "@id" : "_:genid77"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid85"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#R"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "40"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "180.0"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#R"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid94"
+    }, {
+      "@id" : "_:genid92"
+    }, {
+      "@id" : "_:genid88"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid96"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#R"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "40"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid92",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"
+  } ]
+}, {
+  "@id" : "_:genid94",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#R"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
+  } ]
+}, {
+  "@id" : "_:genid96",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid105"
+    }, {
+      "@id" : "_:genid101"
+    }, {
+      "@id" : "_:genid99"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid107"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"
+  } ]
+}, {
   "@id" : "http://creativecommons.org/ns#licence",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/abstract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/elements/1.1/abstract"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/preferredNamespacePrefix",
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/rights",
@@ -20,45 +729,58 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/description",
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
-  } ]
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
 }, {
   "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#licence" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
   "http://purl.org/dc/elements/1.1/abstract" : [ {
     "@value" : "Best city for you is an ontology to know if the activities available in the city could fit your budget or your expectations."
+  } ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "MAPO"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "MAPO"
   } ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings."
   } ],
-  "http://purl.org/dc/elements/1.1/preferredNamespacePrefix" : [ {
-    "@value" : "bcfy"
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@value" : "MAPO"
   } ],
   "http://purl.org/dc/elements/1.1/rights" : [ {
     "@value" : "Copyright © 2025"
-  }, {
-    "@value" : "http://creativecommons.org/licenses/by/4.0"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@value" : "Best city for you"
   } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings."
-  } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "bcfy"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://purl.org/vocommons/voaf#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings."
@@ -69,8 +791,1310 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Best city for you"
   } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1.0"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
   } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Activities in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Activities"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Andalusian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Andalusian restaurant in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Andalusian"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Attraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Place in the city to enjoy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Attraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Beach",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel in the beach"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Beach"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Bus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Bus Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Transport"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Business",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel for bussines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bussines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#CastellToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Monument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Monument castell toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CastellToledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Castell Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City, mainly for activites"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#CityMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PublicBicycle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport public bicycle City Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CityMadrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCompanyValue" : [ {
+    "@value" : "City Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.32"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#CongresToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Culture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cultural event congres toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CongresToledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasDateValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-12-14T00:00:00"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Congres Toledo"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Geolocation coordinate system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Coordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://dbpedia.org/page/Geographic_coordinate_system"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Cultural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cultural attraction in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cultural"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Attraction"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Culture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Culture event in a city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Culture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Event"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date (Day/Month/Year)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Calendar_date"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event in a city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#FestivalMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Music"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Music event, festival madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FestivalMadrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasDateValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-09-14T00:00:00"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Festival Madrid"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#FiraToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Sport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sport event, fira toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FiraToledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasDateValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-08-26T00:00:00"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Fira Toledo"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#FusioMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Italian"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Italian restaurant Fusion Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FusioMadrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Fusion Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "37.0"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.8"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#FusioValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Andalusian"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Andalusian restaurant Fusion Valencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FusioValencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Valencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Fusio Valencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "13.0"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#FusionValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Mexican"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mexican restaurant Fusion Valencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FusionValencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Valencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Fusio Valencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "46.0"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.2"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Gastronomic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Gastronomic event in a city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gastronomic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Event"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#GourmetToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Japanese"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Japanese restaurant Gourmet Toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GourmetToledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Gourmet Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "48.0"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.5"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#HotelDelMarToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Beach"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel with beach Hotel del mar toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HotelDelMarToledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Hotel del mar Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "145.0"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.3"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasStarValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#HotelPalaceMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Business"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel for bussines Hotel Palace Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HotelPalaceMadrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Hotel palace Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "91.0"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.5"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasStarValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#HotelVistaToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Tourist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Hotel for tourism Hotel Vista Toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HotelVistaToledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Hotel Vista Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "99.0"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.6"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasStarValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Italian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Italian restaurant in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Italian"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Japanese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Japanese restaurant in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Japanese"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Latitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Coordinate Latitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Latitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Longitude"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Longitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Coordinate Longitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Longitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "http://dbpedia.org/page/Longitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Luxury",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Luxury hotels"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Luxury"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Madrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Madrid city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCoordinate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#MadridCoordinates"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#MadridCoordinates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Madrid coordinates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MadridCoordinates"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasLatitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "40.4168"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasLongitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "-3.7038"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Mediterranean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mediterranean restaurant in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mediterranean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Metro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Metro Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Transport"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Mexican",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mexican restaurant in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mexican"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Monument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Monument attraction in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Monument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Attraction"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#MuseoMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Museum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Museo Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MuseoMadrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Museo Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Museum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Museum attraction in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Museum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Attraction"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Music",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Music event in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Music"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Event"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#ParcMadrid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Cultural"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Parc Madrid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ParcMadrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Parc Madrid"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.8"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#ParcToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Monument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Parc Toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ParcToledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Parc Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "4.8"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Park",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Music attraction in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Music"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Attraction"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceHigh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "High rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PriceHigh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Rating"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PriceLow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Low rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PriceLow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Rating"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#PublicBicycle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Public Bicycle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PublicBicycle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Transport"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rating classes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rating"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#RatingHigh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "High rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RatingHigh"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Rating"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#RatingLow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Low rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RatingLow"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Rating"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Restaurant in the ciy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restaurant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Rural",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rural hotels"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rural"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Sport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sport event in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Event"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Taxi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Taxi Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Taxi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Transport"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Technological",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Technological event in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Technological"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Event"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Toledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Toledo city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCoordinate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#ToledoCoordinates"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#ToledoCoordinates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Toledo coordinates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ToledoCoordinates"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasLatitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "39.8628"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasLongitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "-4.0273"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Tourist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tourist hotels"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tourist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#TradicioToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Mexican"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mexican restaurant tradicio toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TradicioToledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue" : [ {
+    "@value" : "Tradicio Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "46.0"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.7"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Tram",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tram Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Transport"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#TransToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Tram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport tram Trans Toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TransToledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCompanyValue" : [ {
+    "@value" : "Trans Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "3.61"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#TransValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Tram"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport tram Trans Valencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TransValencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Valencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCompanyValue" : [ {
+    "@value" : "Trans Valencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "9.05"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Transport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transport in the city"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#UrbanToledo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Metro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Metro Urban Toledo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UrbanToledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCompanyValue" : [ {
+    "@value" : "Urban Toledo"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "6.19"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#UrbanValencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Bus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Bus Urban Valencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UrbanValencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Valencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCompanyValue" : [ {
+    "@value" : "Urban Valencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "7.57"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Valencia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Valencia City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Valencia"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasCoordinate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#ValenciaCoordinates"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#ValenciaCoordinates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Valencia Coordinates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ValenciaCoordinates"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasLatitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "39.4699"
+  } ],
+  "https://marcospiedra.github.io/bcfy/ontology.owl#hasLongitude" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "-0.3763"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasCity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Has a city related"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#City"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasCompanyValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Has company related, for transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCompanyValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasCoordinate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Has a coordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCoordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date for an event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Date"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasDateValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Has a date, for events"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDateValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasLatitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Geographic coordinate system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasLatitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasLongitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Geographic coordinate system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasLongitude"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasNameValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasNameValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Has price rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPriceRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Rating"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Has a price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPriceValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Has rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Rating"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Has rating value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasRatingValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasStarValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Stars of hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasStarValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "urn:swrl:var#R",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#X",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
 } ]
