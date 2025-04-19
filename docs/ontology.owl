@@ -8,14 +8,17 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:ontology="https://marcospiedra.github.io/bcfy/ontology.owl#">
     <owl:Ontology rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl">
         <owl:versionIRI rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl"/>
-        <ns1:licence>http://creativecommons.org/licenses/by/4.0/</ns1:licence>
+        <ns1:license>http://creativecommons.org/licenses/by/4.0/</ns1:license>
         <dc:abstract>Best city for you is an ontology to know if the activities available in the city could fit your budget or your expectations.</dc:abstract>
         <dc:contributor>MAPO</dc:contributor>
         <dc:creator>MAPO</dc:creator>
@@ -23,14 +26,25 @@
         <dc:publisher>MAPO</dc:publisher>
         <dc:rights>Copyright © 2025</dc:rights>
         <dc:title>Best city for you</dc:title>
+        <terms:creator>MAPO</terms:creator>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T00:00:00</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T00:00:00</terms:modified>
+        <terms:publisher>MAPO</terms:publisher>
+        <terms:source>http://standards.iso.org/iso/19108/ed-1/en/</terms:source>
+        <terms:title>Best city for you</terms:title>
+        <bibo:doi>10.5281/zenodo.6940891</bibo:doi>
+        <bibo:status>http://purl.org/ontology/bibo/status/accepted</bibo:status>
         <vann:preferredNamespacePrefix>bcfy</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://purl.org/vocommons/voaf#</vann:preferredNamespaceUri>
         <rdfs:comment>A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings.</rdfs:comment>
         <rdfs:isDefinedBy>MAPO</rdfs:isDefinedBy>
         <rdfs:label>Best city for you</rdfs:label>
+        <owl:backwardCompatibleWith rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:backwardCompatibleWith>
         <owl:priorVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:priorVersion>
+        <owl:versionIRI>https://marcospiedra.github.io/bcfy/ontology.owl</owl:versionIRI>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
         <ns:term_status>testing</ns:term_status>
+        <foaf:logo>https://www.leonvanwissen.nl/vocab/roar/docs/resources/roar-logo.png</foaf:logo>
     </owl:Ontology>
     
 
@@ -51,6 +65,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#licence"/>
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
     
 
 
@@ -103,6 +124,62 @@
     
 
 
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/doi -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/doi"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
 
@@ -131,10 +208,50 @@
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#priorVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#priorVersion"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
     <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 

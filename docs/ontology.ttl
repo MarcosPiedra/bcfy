@@ -8,7 +8,7 @@
 
 <https://marcospiedra.github.io/bcfy/ontology.owl> rdf:type owl:Ontology ;
                                                     owl:versionIRI <https://marcospiedra.github.io/bcfy/ontology.owl> ;
-                                                    <http://creativecommons.org/ns#licence> "http://creativecommons.org/licenses/by/4.0/" ;
+                                                    <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/4.0/" ;
                                                     <http://purl.org/dc/elements/1.1/abstract> "Best city for you is an ontology to know if the activities available in the city could fit your budget or your expectations." ;
                                                     <http://purl.org/dc/elements/1.1/contributor> "MAPO" ;
                                                     <http://purl.org/dc/elements/1.1/creator> "MAPO" ;
@@ -16,14 +16,25 @@
                                                     <http://purl.org/dc/elements/1.1/publisher> "MAPO" ;
                                                     <http://purl.org/dc/elements/1.1/rights> "Copyright © 2025" ;
                                                     <http://purl.org/dc/elements/1.1/title> "Best city for you" ;
+                                                    <http://purl.org/dc/terms/creator> "MAPO" ;
+                                                    <http://purl.org/dc/terms/issued> "2025-04-20T00:00:00"^^xsd:dateTime ;
+                                                    <http://purl.org/dc/terms/modified> "2025-04-20T00:00:00"^^xsd:dateTime ;
+                                                    <http://purl.org/dc/terms/publisher> "MAPO" ;
+                                                    <http://purl.org/dc/terms/source> "http://standards.iso.org/iso/19108/ed-1/en/" ;
+                                                    <http://purl.org/dc/terms/title> "Best city for you" ;
+                                                    <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.6940891" ;
+                                                    <http://purl.org/ontology/bibo/status> "http://purl.org/ontology/bibo/status/accepted" ;
                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcfy" ;
                                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/vocommons/voaf#" ;
                                                     rdfs:comment "A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings." ;
                                                     rdfs:isDefinedBy "MAPO" ;
                                                     rdfs:label "Best city for you" ;
+                                                    owl:backwardCompatibleWith 1.0 ;
                                                     owl:priorVersion 1.0 ;
+                                                    owl:versionIRI "https://marcospiedra.github.io/bcfy/ontology.owl" ;
                                                     owl:versionInfo 1.0 ;
-                                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+                                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" ;
+                                                    <http://xmlns.com/foaf/0.1/logo> "https://www.leonvanwissen.nl/vocab/roar/docs/resources/roar-logo.png" .
 
 #################################################################
 #    Annotation properties
@@ -31,6 +42,10 @@
 
 ###  http://creativecommons.org/ns#licence
 <http://creativecommons.org/ns#licence> rdf:type owl:AnnotationProperty .
+
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/abstract
@@ -61,6 +76,38 @@
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/doi
+<http://purl.org/ontology/bibo/doi> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
@@ -77,8 +124,28 @@ rdfs:comment rdf:type owl:AnnotationProperty .
 rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/logo
+<http://xmlns.com/foaf/0.1/logo> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
