@@ -16,8 +16,10 @@
                                                     <http://purl.org/dc/elements/1.1/publisher> "MAPO" ;
                                                     <http://purl.org/dc/elements/1.1/rights> "Copyright © 2025" ;
                                                     <http://purl.org/dc/elements/1.1/title> "Best city for you" ;
+                                                    <http://purl.org/dc/terms/bibliographicCitation> "Citation" ;
                                                     <http://purl.org/dc/terms/creator> "MAPO" ;
                                                     <http://purl.org/dc/terms/issued> "2025-04-20T00:00:00"^^xsd:dateTime ;
+                                                    <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
                                                     <http://purl.org/dc/terms/modified> "2025-04-20T00:00:00"^^xsd:dateTime ;
                                                     <http://purl.org/dc/terms/publisher> "MAPO" ;
                                                     <http://purl.org/dc/terms/source> "http://standards.iso.org/iso/19108/ed-1/en/" ;
@@ -76,12 +78,20 @@
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/modified

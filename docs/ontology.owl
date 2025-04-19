@@ -26,8 +26,10 @@
         <dc:publisher>MAPO</dc:publisher>
         <dc:rights>Copyright © 2025</dc:rights>
         <dc:title>Best city for you</dc:title>
+        <terms:bibliographicCitation>Citation</terms:bibliographicCitation>
         <terms:creator>MAPO</terms:creator>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T00:00:00</terms:issued>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T00:00:00</terms:modified>
         <terms:publisher>MAPO</terms:publisher>
         <terms:source>http://standards.iso.org/iso/19108/ed-1/en/</terms:source>
@@ -124,6 +126,13 @@
     
 
 
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
     <!-- http://purl.org/dc/terms/creator -->
 
 
@@ -135,6 +144,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 

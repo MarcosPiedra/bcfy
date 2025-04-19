@@ -8,8 +8,10 @@
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/elements/1.1/publisher> "MAPO" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/elements/1.1/rights> "Copyright © 2025" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/elements/1.1/title> "Best city for you" .
+<https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/bibliographicCitation> "Citation" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/creator> "MAPO" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/issued> "2025-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/modified> "2025-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/publisher> "MAPO" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/source> "http://standards.iso.org/iso/19108/ed-1/en/" .
@@ -63,11 +65,17 @@
 # http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/issued
 <http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/modified
 <http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
