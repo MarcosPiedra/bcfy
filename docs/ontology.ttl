@@ -17,6 +17,7 @@
                                                     <http://purl.org/dc/elements/1.1/rights> "Copyright © 2025" ;
                                                     <http://purl.org/dc/elements/1.1/title> "Best city for you" ;
                                                     <http://purl.org/dc/terms/bibliographicCitation> "Citation" ;
+                                                    <http://purl.org/dc/terms/created> "2025-04-20T00:00:00"^^xsd:dateTime ;
                                                     <http://purl.org/dc/terms/creator> "MAPO" ;
                                                     <http://purl.org/dc/terms/issued> "2025-04-20T00:00:00"^^xsd:dateTime ;
                                                     <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
@@ -28,6 +29,7 @@
                                                     <http://purl.org/ontology/bibo/status> "http://purl.org/ontology/bibo/status/accepted" ;
                                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcfy" ;
                                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/vocommons/voaf#" ;
+                                                    <http://schema.org/citation> "citation" ;
                                                     rdfs:comment "A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings." ;
                                                     rdfs:isDefinedBy "MAPO" ;
                                                     rdfs:label "Best city for you" ;
@@ -41,10 +43,6 @@
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://creativecommons.org/ns#licence
-<http://creativecommons.org/ns#licence> rdf:type owl:AnnotationProperty .
-
 
 ###  http://creativecommons.org/ns#license
 <http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
@@ -80,6 +78,10 @@
 
 ###  http://purl.org/dc/terms/bibliographicCitation
 <http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
@@ -124,6 +126,10 @@
 
 ###  http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/citation
+<http://schema.org/citation> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2000/01/rdf-schema#comment

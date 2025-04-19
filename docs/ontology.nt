@@ -9,6 +9,7 @@
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/elements/1.1/rights> "Copyright © 2025" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/elements/1.1/title> "Best city for you" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/bibliographicCitation> "Citation" .
+<https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/created> "2025-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/creator> "MAPO" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/issued> "2025-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
@@ -20,6 +21,7 @@
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/ontology/bibo/status> "http://purl.org/ontology/bibo/status/accepted" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcfy" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/vocommons/voaf#" .
+<https://marcospiedra.github.io/bcfy/ontology.owl> <http://schema.org/citation> "citation" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings." .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "MAPO" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://www.w3.org/2000/01/rdf-schema#label> "Best city for you" .
@@ -37,9 +39,6 @@
 # #
 # #################################################################
 # 
-# 
-# http://creativecommons.org/ns#licence
-<http://creativecommons.org/ns#licence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://creativecommons.org/ns#license
 <http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -67,6 +66,9 @@
 # 
 # http://purl.org/dc/terms/bibliographicCitation
 <http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -100,6 +102,9 @@
 # 
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/citation
+<http://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2000/01/rdf-schema#comment
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

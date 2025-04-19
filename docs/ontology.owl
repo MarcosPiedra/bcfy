@@ -15,6 +15,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
      xmlns:ontology="https://marcospiedra.github.io/bcfy/ontology.owl#">
     <owl:Ontology rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl">
         <owl:versionIRI rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl"/>
@@ -27,6 +28,7 @@
         <dc:rights>Copyright © 2025</dc:rights>
         <dc:title>Best city for you</dc:title>
         <terms:bibliographicCitation>Citation</terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T00:00:00</terms:created>
         <terms:creator>MAPO</terms:creator>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T00:00:00</terms:issued>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
@@ -38,6 +40,7 @@
         <bibo:status>http://purl.org/ontology/bibo/status/accepted</bibo:status>
         <vann:preferredNamespacePrefix>bcfy</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://purl.org/vocommons/voaf#</vann:preferredNamespaceUri>
+        <schema:citation>citation</schema:citation>
         <rdfs:comment>A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings.</rdfs:comment>
         <rdfs:isDefinedBy>MAPO</rdfs:isDefinedBy>
         <rdfs:label>Best city for you</rdfs:label>
@@ -60,13 +63,6 @@
      -->
 
 
-    
-
-
-    <!-- http://creativecommons.org/ns#licence -->
-
-
-    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#licence"/>
     
 
 
@@ -130,6 +126,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
@@ -207,6 +210,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/citation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/citation"/>
     
 
 
