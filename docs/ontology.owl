@@ -41,6 +41,7 @@
         <vann:preferredNamespacePrefix>bcfy</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://purl.org/vocommons/voaf#</vann:preferredNamespaceUri>
         <schema:citation>citation</schema:citation>
+        <schema:dateCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-20T00:00:00</schema:dateCreated>
         <rdfs:comment>A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings.</rdfs:comment>
         <rdfs:isDefinedBy>MAPO</rdfs:isDefinedBy>
         <rdfs:label>Best city for you</rdfs:label>
@@ -217,6 +218,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://schema.org/citation"/>
+    
+
+
+    <!-- http://schema.org/dateCreated -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/dateCreated"/>
     
 
 

@@ -771,6 +771,9 @@
   "@id" : "http://schema.org/citation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://schema.org/dateCreated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -868,6 +871,10 @@
   } ],
   "http://schema.org/citation" : [ {
     "@value" : "citation"
+  } ],
+  "http://schema.org/dateCreated" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2025-04-20T00:00:00"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings."

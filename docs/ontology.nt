@@ -22,6 +22,7 @@
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bcfy" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/vocommons/voaf#" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://schema.org/citation> "citation" .
+<https://marcospiedra.github.io/bcfy/ontology.owl> <http://schema.org/dateCreated> "2025-04-20T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference of both the best or worst ratings, and the best or worst prices or costs in that city. For example, if the user has preferences for high costs and better ratings, or on the other hand, has preferences for low costs with high ratings." .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "MAPO" .
 <https://marcospiedra.github.io/bcfy/ontology.owl> <http://www.w3.org/2000/01/rdf-schema#label> "Best city for you" .
@@ -105,6 +106,9 @@
 # 
 # http://schema.org/citation
 <http://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/dateCreated
+<http://schema.org/dateCreated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://www.w3.org/2000/01/rdf-schema#comment
 <http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
