@@ -18,7 +18,16 @@
     "@value" : "-180.0"
   } ]
 }, {
-  "@id" : "_:genid101",
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"
+  } ]
+}, {
+  "@id" : "_:genid102",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -32,7 +41,7 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
   } ]
 }, {
-  "@id" : "_:genid105",
+  "@id" : "_:genid106",
   "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -44,7 +53,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
   } ]
 }, {
-  "@id" : "_:genid107",
+  "@id" : "_:genid108",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -56,20 +65,20 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
   } ]
 }, {
-  "@id" : "_:genid108",
+  "@id" : "_:genid109",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid114"
+      "@id" : "_:genid115"
     }, {
-      "@id" : "_:genid112"
+      "@id" : "_:genid113"
     }, {
-      "@id" : "_:genid110"
+      "@id" : "_:genid111"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid118"
+      "@id" : "_:genid119"
     } ]
   } ]
 }, {
@@ -86,7 +95,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid110",
+  "@id" : "_:genid111",
   "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -98,7 +107,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue"
   } ]
 }, {
-  "@id" : "_:genid112",
+  "@id" : "_:genid113",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -107,7 +116,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
   } ]
 }, {
-  "@id" : "_:genid114",
+  "@id" : "_:genid115",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -121,7 +130,7 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
   } ]
 }, {
-  "@id" : "_:genid118",
+  "@id" : "_:genid119",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -133,24 +142,24 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasRating"
   } ]
 }, {
-  "@id" : "_:genid119",
+  "@id" : "_:genid120",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid125"
+      "@id" : "_:genid126"
     }, {
-      "@id" : "_:genid123"
+      "@id" : "_:genid124"
     }, {
-      "@id" : "_:genid121"
+      "@id" : "_:genid122"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid129"
+      "@id" : "_:genid130"
     } ]
   } ]
 }, {
-  "@id" : "_:genid121",
+  "@id" : "_:genid122",
   "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -162,7 +171,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasRatingValue"
   } ]
 }, {
-  "@id" : "_:genid123",
+  "@id" : "_:genid124",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -171,7 +180,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
   } ]
 }, {
-  "@id" : "_:genid125",
+  "@id" : "_:genid126",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -185,7 +194,13 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
   } ]
 }, {
-  "@id" : "_:genid129",
+  "@id" : "_:genid13",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#float",
+    "@value" : "5.0"
+  } ]
+}, {
+  "@id" : "_:genid130",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -195,12 +210,6 @@
   } ],
   "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasRating"
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#float",
-    "@value" : "5.0"
   } ]
 }, {
   "@id" : "_:genid15",
@@ -259,6 +268,19 @@
   "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasDateValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
@@ -269,7 +291,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid24",
+  "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -282,7 +304,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -304,7 +326,7 @@
     "@value" : "90.0"
   } ]
 }, {
-  "@id" : "_:genid31",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -320,7 +342,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid37",
+  "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
@@ -334,24 +356,24 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid42",
+  "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid50"
+      "@id" : "_:genid51"
     }, {
-      "@id" : "_:genid48"
+      "@id" : "_:genid49"
     }, {
-      "@id" : "_:genid44"
+      "@id" : "_:genid45"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid52"
+      "@id" : "_:genid53"
     } ]
   } ]
 }, {
-  "@id" : "_:genid44",
+  "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -365,7 +387,7 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
   } ]
 }, {
-  "@id" : "_:genid48",
+  "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -383,7 +405,7 @@
     "@value" : "-90.0"
   } ]
 }, {
-  "@id" : "_:genid50",
+  "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -392,7 +414,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Transport"
   } ]
 }, {
-  "@id" : "_:genid52",
+  "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -404,24 +426,24 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
   } ]
 }, {
-  "@id" : "_:genid53",
+  "@id" : "_:genid54",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid61"
+      "@id" : "_:genid62"
     }, {
-      "@id" : "_:genid59"
+      "@id" : "_:genid60"
     }, {
-      "@id" : "_:genid55"
+      "@id" : "_:genid56"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid63"
+      "@id" : "_:genid64"
     } ]
   } ]
 }, {
-  "@id" : "_:genid55",
+  "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -433,18 +455,6 @@
   } ],
   "http://www.w3.org/2003/11/swrl#builtin" : [ {
     "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
-  } ]
-}, {
-  "@id" : "_:genid59",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl:var#X"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "urn:swrl:var#R"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -460,7 +470,19 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid61",
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#R"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
+  } ]
+}, {
+  "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -469,7 +491,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Transport"
   } ]
 }, {
-  "@id" : "_:genid63",
+  "@id" : "_:genid64",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -481,24 +503,24 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
   } ]
 }, {
-  "@id" : "_:genid64",
+  "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid72"
+      "@id" : "_:genid73"
     }, {
-      "@id" : "_:genid70"
+      "@id" : "_:genid71"
     }, {
-      "@id" : "_:genid66"
+      "@id" : "_:genid67"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid74"
+      "@id" : "_:genid75"
     } ]
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -512,7 +534,7 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
   } ]
 }, {
-  "@id" : "_:genid70",
+  "@id" : "_:genid71",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -521,7 +543,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"
   } ]
 }, {
-  "@id" : "_:genid72",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -533,7 +555,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -545,24 +567,24 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
   } ]
 }, {
-  "@id" : "_:genid75",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid83"
+      "@id" : "_:genid84"
     }, {
-      "@id" : "_:genid81"
+      "@id" : "_:genid82"
     }, {
-      "@id" : "_:genid77"
+      "@id" : "_:genid78"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid85"
+      "@id" : "_:genid86"
     } ]
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -582,7 +604,7 @@
     "@value" : "180.0"
   } ]
 }, {
-  "@id" : "_:genid81",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -591,7 +613,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"
   } ]
 }, {
-  "@id" : "_:genid83",
+  "@id" : "_:genid84",
   "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -603,7 +625,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
   } ]
 }, {
-  "@id" : "_:genid85",
+  "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -615,24 +637,24 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
   } ]
 }, {
-  "@id" : "_:genid86",
+  "@id" : "_:genid87",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid94"
+      "@id" : "_:genid95"
     }, {
-      "@id" : "_:genid92"
+      "@id" : "_:genid93"
     }, {
-      "@id" : "_:genid88"
+      "@id" : "_:genid89"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid96"
+      "@id" : "_:genid97"
     } ]
   } ]
 }, {
-  "@id" : "_:genid88",
+  "@id" : "_:genid89",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -646,7 +668,7 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
   } ]
 }, {
-  "@id" : "_:genid92",
+  "@id" : "_:genid93",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -655,7 +677,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"
   } ]
 }, {
-  "@id" : "_:genid94",
+  "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -667,7 +689,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceValue"
   } ]
 }, {
-  "@id" : "_:genid96",
+  "@id" : "_:genid97",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "urn:swrl:var#X"
@@ -679,30 +701,21 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#hasPriceRating"
   } ]
 }, {
-  "@id" : "_:genid97",
+  "@id" : "_:genid98",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid105"
+      "@id" : "_:genid106"
     }, {
-      "@id" : "_:genid101"
+      "@id" : "_:genid102"
     }, {
-      "@id" : "_:genid99"
+      "@id" : "_:genid100"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid107"
+      "@id" : "_:genid108"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid99",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "urn:swrl:var#X"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Hotel"
   } ]
 }, {
   "@id" : "http://creativecommons.org/ns#license",
@@ -1011,6 +1024,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "City"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/City"
+  } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid22"
   } ]
@@ -1106,6 +1122,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
     "@value" : "https://dbpedia.org/page/Calendar_date"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid23"
   } ]
 }, {
   "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Event",
@@ -1292,7 +1311,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid23"
+    "@id" : "_:genid24"
   } ]
 }, {
   "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#HotelDelMarToledo",
@@ -1407,36 +1426,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"
-  } ]
-}, {
-  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Latitude",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Coordinate Latitude"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Latitude"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Longitude"
-  } ]
-}, {
-  "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Longitude",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Coordinate Longitude"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Longitude"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
-    "@value" : "http://dbpedia.org/page/Longitude"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"
   } ]
 }, {
   "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Luxury",
@@ -1918,7 +1907,7 @@
     "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#Activities"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid24"
+    "@id" : "_:genid25"
   } ]
 }, {
   "@id" : "https://marcospiedra.github.io/bcfy/ontology.owl#UrbanToledo",

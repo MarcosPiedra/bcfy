@@ -626,6 +626,7 @@
         </owl:equivalentClass>
         <rdfs:comment>City, mainly for activites</rdfs:comment>
         <rdfs:label>City</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/City</rdfs:sameAs>
     </owl:Class>
     
 
@@ -667,6 +668,13 @@
 
 
     <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Date">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#hasDateValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:comment>Date (Day/Month/Year)</rdfs:comment>
         <rdfs:label>Date</rdfs:label>
         <rdfs:sameAs>https://dbpedia.org/page/Calendar_date</rdfs:sameAs>
@@ -732,30 +740,6 @@
         <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Restaurant"/>
         <rdfs:comment>Japanese restaurant in the city</rdfs:comment>
         <rdfs:label>Japanese</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Latitude -->
-
-
-    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Latitude">
-        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"/>
-        <owl:disjointWith rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Longitude"/>
-        <rdfs:comment>Coordinate Latitude</rdfs:comment>
-        <rdfs:label>Latitude</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://marcospiedra.github.io/bcfy/ontology.owl#Longitude -->
-
-
-    <owl:Class rdf:about="https://marcospiedra.github.io/bcfy/ontology.owl#Longitude">
-        <rdfs:subClassOf rdf:resource="https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate"/>
-        <rdfs:comment>Coordinate Longitude</rdfs:comment>
-        <rdfs:label>Longitude</rdfs:label>
-        <rdfs:sameAs>http://dbpedia.org/page/Longitude</rdfs:sameAs>
     </owl:Class>
     
 

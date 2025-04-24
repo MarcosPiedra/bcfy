@@ -379,7 +379,8 @@ xsd:date rdf:type rdfs:Datatype .
                             owl:onClass :Coordinate
                           ] ;
       rdfs:comment "City, mainly for activites" ;
-      rdfs:label "City" .
+      rdfs:label "City" ;
+      rdfs:sameAs "https://dbpedia.org/page/City" .
 
 
 ###  https://marcospiedra.github.io/bcfy/ontology.owl#Coordinate
@@ -405,6 +406,11 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://marcospiedra.github.io/bcfy/ontology.owl#Date
 :Date rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasDateValue ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:dateTime
+                          ] ;
       rdfs:comment "Date (Day/Month/Year)" ;
       rdfs:label "Date" ;
       rdfs:sameAs "https://dbpedia.org/page/Calendar_date" .
@@ -448,22 +454,6 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:subClassOf :Restaurant ;
           rdfs:comment "Japanese restaurant in the city" ;
           rdfs:label "Japanese" .
-
-
-###  https://marcospiedra.github.io/bcfy/ontology.owl#Latitude
-:Latitude rdf:type owl:Class ;
-          rdfs:subClassOf :Coordinate ;
-          owl:disjointWith :Longitude ;
-          rdfs:comment "Coordinate Latitude" ;
-          rdfs:label "Latitude" .
-
-
-###  https://marcospiedra.github.io/bcfy/ontology.owl#Longitude
-:Longitude rdf:type owl:Class ;
-           rdfs:subClassOf :Coordinate ;
-           rdfs:comment "Coordinate Longitude" ;
-           rdfs:label "Longitude" ;
-           rdfs:sameAs "http://dbpedia.org/page/Longitude" .
 
 
 ###  https://marcospiedra.github.io/bcfy/ontology.owl#Luxury
